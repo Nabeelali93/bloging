@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  background-image: url(assets/top-view-books-with-copy-space.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+ }
+ 
