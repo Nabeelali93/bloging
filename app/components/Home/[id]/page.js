@@ -697,7 +697,7 @@ axios.request(config)
 
                     <iframe 
                              
-className="w-96 h-96  overflow-hidden  "
+                    className="w-96 h-96  overflow-hidden  "
                      src={v.imagelink}>
                          </iframe>
 

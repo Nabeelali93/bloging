@@ -25,7 +25,7 @@ const result = await data.findOne(filter)
 }
 
 
-export async function PUTT(request,content){
+export async function PUT(request,content){
 
     const id = content.params.id
     

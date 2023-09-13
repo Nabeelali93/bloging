@@ -53,7 +53,6 @@ export async function PUT(request,content){
     // console.log("myproo",body._id)
 
 await mongoose.connect(dbconnect)
-console.log("putt concted")
 
 const id = {_id:body._id}
 console.log(id)
@@ -63,6 +62,7 @@ const res = await postdata.findOneAndUpdate(id, body)
 
     return NextResponse.json({
         data:res,
-        message:"Putt my profile"
+        message:"Put my profile",
+        status:true
     })
 }
