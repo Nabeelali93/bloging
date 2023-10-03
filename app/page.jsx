@@ -1,8 +1,7 @@
 'use client'
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import axios from "axios";
-import { useEffect } from "react";
 import 'react-toastify/dist/ReactToastify.css';
 import { useRouter } from "next/navigation";
 
@@ -14,7 +13,7 @@ import {
 } from "tw-elements";
 
 
-export default function Home() {
+ function Home() {
 
 const router = useRouter()
 
@@ -109,7 +108,7 @@ axios.request(config)
       autoClose: 800
     })
 
-router.replace(`./components/Home/${response.data.data._id}`)
+router.replace(`components/Home/${response.data.data._id}`)
 
   }
 
@@ -279,3 +278,6 @@ router.replace(`./components/Home/${response.data.data._id}`)
    </>
   )
 }
+
+
+export default Home

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { NextResponse } from "next/server";
 import {dbconnect} from '../../../../lib/db'
-import {data } from '../../../../lib/model/user'
+import {data} from '../../../../lib/model/user'
 
 
 export async function GET(request,content){
